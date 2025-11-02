@@ -1,2 +1,2 @@
-# rmgr
-A crash handler for Linux to prevent freezing.
+# Sine
+A complex calculator app with graphing and scientific features.
