@@ -4,11 +4,10 @@ import random
 import gi
 
 gi.require_version("Gtk", "4.0")
-gi.require_version("Adw", "1")
-from gi.repository import GLib, Gtk, Adw
-Adw.init()
+from gi.repository import GLib, Gtk
 
-class app(Adw.Application):
+
+class app(Gtk.Application):
     def __init__(self):
         super().__init__(application_id="com.srcworks.sine")
         GLib.set_application_name("Sine")
@@ -16,9 +15,7 @@ class app(Adw.Application):
 
     def do_activate(self):
         # declare main window
-        window = Adw.ApplicationWindow(application=self, title="Sine")
-        # header bar
-        window.set_title("Sine")
+        window = Gtk.ApplicationWindow(application=self, title="Sine")
         # box for widgets
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         # field widget
@@ -46,7 +43,7 @@ class app(Adw.Application):
 
         # append and what not
         vbox.append(grid)
-        window.set_content(vbox)
+        window.set_child(vbox)
         window.present()
 
     def key_parse(self, key):
