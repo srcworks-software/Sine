@@ -1,13 +1,13 @@
+#!/usr/bin/env python3
 import sys
 import math
-import random
 import gi
 
 gi.require_version("Gtk", "4.0")
 from gi.repository import GLib, Gtk
 
 
-class app(Gtk.Application):
+class App(Gtk.Application):
     def __init__(self):
         super().__init__(application_id="com.srcworks.sine")
         GLib.set_application_name("Sine")
@@ -89,7 +89,10 @@ class app(Gtk.Application):
             self.entry.set_text(current[:-1])
         else:
             pass # do nothing for unrecognized keys
+def main():
+    app = App()
+    exit_status = app.run(sys.argv)
+    sys.exit(exit_status)
 
-app = app()
-exit_status = app.run(sys.argv)
-sys.exit(exit_status)
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,2 @@
+[console_scripts]
+sine = sine.main:main

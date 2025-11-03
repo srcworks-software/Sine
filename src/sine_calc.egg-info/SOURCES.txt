@@ -1,0 +1,9 @@
+desktop.desktop
+setup.py
+sine/__init__.py
+sine/main.py
+sine_calc.egg-info/PKG-INFO
+sine_calc.egg-info/SOURCES.txt
+sine_calc.egg-info/dependency_links.txt
+sine_calc.egg-info/entry_points.txt
+sine_calc.egg-info/top_level.txt
