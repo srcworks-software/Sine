@@ -2,6 +2,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/srcworks-software/Sine?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/srcworks-software/Sine?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/srcworks-software/Sine?style=for-the-badge)
+
 A complex calculator app with graphing and scientific features.
 
 # Setup
